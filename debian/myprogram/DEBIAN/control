@@ -1,0 +1,11 @@
+Package: myprogram
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Your Name <youremail@example.com>
+Installed-Size: 23
+Depends: libc6 (>= 2.34), libstdc++6 (>= 13.1)
+Section: utils
+Priority: optional
+Homepage: https://example.com
+Description: My sample program
+ A simple program to demonstrate Debian packaging.

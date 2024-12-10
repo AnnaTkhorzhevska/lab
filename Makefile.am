@@ -1,2 +1,4 @@
-bin_PROGRAMS = my_program
-my_program_SOURCES = main.cpp
+bin_PROGRAMS = myprogram
+myprogram_SOURCES = main.cpp
+
+dist_dir = $(top_srcdir)/dist

@@ -1,0 +1,13 @@
+Source: myprogram
+Section: utils
+Priority: optional
+Maintainer: Your Name <youremail@example.com>
+Build-Depends: debhelper (>= 9), automake, autoconf
+Standards-Version: 3.9.8
+Homepage: https://example.com
+
+Package: myprogram
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: My sample program
+ A simple program to demonstrate Debian packaging.

@@ -1,0 +1,31 @@
+name: C++ Build and Test
+
+on:
+  push:
+    branches:
+      - branchMake
+  pull_request:
+    branches:
+      - branchMake
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up GCC
+        uses: actions/setup-cpp@v2
+        with:
+          compiler: 'g++'
+
+      - name: Install dependencies
+        run: sudo apt-get install build-essential
+
+      - name: Build the program
+        run: make
+
+      - name: Run the program
+        run: ./my_program
